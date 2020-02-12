@@ -1,0 +1,123 @@
+/* Unversal Commands */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration:none;
+}
+a:link{
+    color:goldenrod;
+}
+a:visited{
+    color:goldenrod;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
+}
+
+.navigation{
+    position: fixed;
+    float: left;
+    width: 199px;
+    height: 100vh;
+    background-color: black;
+}
+
+.nav-bar{
+    float: left;
+
+}
+.nav-item{
+    font-family: 'Bungee', cursive;
+    margin-top:0px;
+    list-style:none;
+    color:goldenrod;
+    padding:15px;
+    
+    
+}
+.social-bar{
+    float:left;
+    padding:0px;
+    margin:0px;
+    height:100%;
+    width: 70px;
+    position: relative;
+    background-color:goldenrod;
+    
+}
+.social-item{
+    width:50px;
+    height:50px;
+    list-style:none;
+    padding:10px;
+
+}
+.side-margin{
+    margin-top:175px;
+}
+
+.nav-item a:hover{
+    color:white;
+}
+.tanks{
+    height:100%;
+    background-image: url(./imgs/brewing_tanks.jpg); 
+}
+.full-cover-image{
+    float: right;
+    width: 1241px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+.mis-primos{
+    position:relative;
+    left:500px;
+    top:350px;
+    color: goldenrod;
+    font-family: 'Bungee', cursive;
+    font-size:45px;
+}
+.brewing{
+    position:relative;
+    left:575px;
+    top:340px;
+    font-size:30px;
+    color: goldenrod;
+    font-family: 'Bungee', cursive;
+}
+.beers{
+    background-image: url(./imgs/beers.jpg);
+    height:100vh;
+    /* below I don't need width since it is already stated above */
+    /* width:1000px; */
+}
+.home-buttons{
+    position:relative;
+    color:black;
+    left:450px;
+    top:390px;
+    display: inline;
+    font-family:'Bungee', cursive;
+    background-color: black;
+    position:relative;
+    padding:2px;
+}
+.home-buttons a:hover{
+    color:white;
+}
+.events{
+    background-image:url(./imgs/events.jpeg);
+    height:100vh;
+}
+
+
