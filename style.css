@@ -3,6 +3,12 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    /* scroll-snap-type:mandatory;
+    scroll-snap-points-y:845px; */
+    /* auto scroll on page first code */
+    scroll-snap-type: y mandatory;
+}
 a{
     text-decoration:none;
 }
@@ -12,16 +18,19 @@ a:link{
 a:visited{
     color:goldenrod;
 }
-
+.homebody{
+    width:1440px;
+}
 body{
     padding:0px;
     margin:0px;
-    scroll-snap-type: mandatory;
+    /* scroll-snap-type: mandatory; */
     overflow-y: scroll;
 }
-
+/* HEADER START */
 .navigation{
     position: fixed;
+    z-index:1;
     float: left;
     width: 199px;
     height: 100vh;
@@ -30,17 +39,18 @@ body{
 
 .nav-bar{
     float: left;
+    margin-top:30px;
 
 }
+
 .nav-item{
     font-family: 'Bungee', cursive;
-    margin-top:0px;
+    margin-top:15px;
     list-style:none;
     color:goldenrod;
     padding:15px;
-    
-    
 }
+
 .social-bar{
     float:left;
     padding:0px;
@@ -65,49 +75,49 @@ body{
 .nav-item a:hover{
     color:white;
 }
+/* HEADER END */
+/* HOME IMAGE START */
 .tanks{
     height:100%;
-    background-image: url(./imgs/brewing_tanks.jpg); 
+    background-image: url(./imgs/brewing_tanks.jpg);
 }
 .full-cover-image{
+    /* auto scrolll on page second code */
+    scroll-snap-align: start;
     float: right;
     width: 1241px;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    scroll-snap-align: start;
 }
 
 .mis-primos{
-    position:relative;
-    left:500px;
-    top:350px;
-    color: goldenrod;
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 300px;
+    top: 260px;
+    color: black;
     font-family: 'Bungee', cursive;
-    font-size:45px;
+    font-size: 92px;
 }
 .brewing{
-    position:relative;
-    left:575px;
-    top:340px;
-    font-size:30px;
-    color: goldenrod;
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 415px;
+    top: 245px;
+    font-size: 75px;
+    color: black;
     font-family: 'Bungee', cursive;
-}
-.beers{
-    background-image: url(./imgs/beers.jpg);
-    height:100vh;
-    /* below I don't need width since it is already stated above */
-    /* width:1000px; */
 }
 .home-buttons{
     position:relative;
-    color:black;
-    left:450px;
-    top:390px;
+    /* color:black; */
+    left:270px;
+    top:250px;
     display: inline;
     font-family:'Bungee', cursive;
+    font-size:30px;
     background-color: black;
     position:relative;
     padding:2px;
@@ -115,9 +125,360 @@ body{
 .home-buttons a:hover{
     color:white;
 }
+
+/* HOME IMAGE END */
+/* BEER IMAGE START */
+.beers{
+    background-image: url(./imgs/beers.jpg);
+    /* background-image: linear-gradient(rgba(167, 77, 17, 0.322),rgba(167, 77, 17, 0.322)),url(./imgs/beers.jpg); */
+    height:100vh;
+    /* below I don't need width since it is already stated above */
+    /* width:1000px; */
+}
+
+.pasa {
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 420px;
+    top: 300px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+.beer-buttons{
+    position:relative;
+    color:goldenrod;
+    left:390px;
+    top:300px;
+    display: inline;
+    font-family:'Bungee', cursive;
+    background-color: black;
+    position:relative;
+    padding:2px;
+    font-size:30px;
+}
+.beer-buttons a:hover{
+    color:white;
+}
+
+/* BEER IMAGE END */
+/* EVENT IMAGE START */
 .events{
-    background-image:url(./imgs/events.jpeg);
+    background-image: url(./imgs/events.jpeg);
     height:100vh;
 }
+.caile{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 290px;
+    top: 350px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+.events-buttons{
+    position:relative;
+    color:goldenrod;
+    left:390px;
+    top:350px;
+    display: inline;
+    font-family:'Bungee', cursive;
+    background-color: black;
+    position:relative;
+    padding:2px;
+    font-size:30px;
+}
+.events-buttons a:hover{
+    color:white;
+}
+/* EVENT IMAGE END */
+
+/* ABOUT IMAGE START */
+.about{
+    background-image: url(./imgs/about-us-image.jpeg);
+    /* background-image: linear-gradient(rgba(167, 77, 17, 0.322),rgba(167, 77, 17, 0.322)),url(./imgs/about-us-image.jpeg); */
+    height:100vh;
+}
+.fam{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 170px;
+    top: 350px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+.about-buttons{
+    position:relative;
+    color:goldenrod;
+    left:454px;
+    top:350px;
+    display: inline;
+    font-family:'Bungee', cursive;
+    background-color: black;
+    position:relative;
+    padding:2px;
+    font-size:30px;
+}
+.about-buttons a:hover{
+    color:white;
+}
+/* ABOUT IMAGE START */
+/* LOCATIONS IMAGE START */
+.locations{
+    background-image: url(./imgs/locate-us-index.jpeg);
+}
+.come-join{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 190px;
+    top: 250px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+.location-buttons{
+    position:relative;
+    color:goldenrod;
+    left:355px;
+    top:250px;
+    display: inline;
+    font-family:'Bungee', cursive;
+    background-color: black;
+    position:relative;
+    padding:2px;
+    font-size:30px;
+}
+.location-buttons a:hover{
+    color:white;
+}
+/* HOME PAGE ENDS */
+/* BEER PAGE STARTS */
+.beer-content{
+    width:4964px;
+    margin-left:199px;
+}
+.beerbody{
+    scroll-snap-align: x mandatory;
+}
+.beer-image{
+    scroll-snap-align: start;
+    float: right;
+    width: 1241px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* RINCON IPA */
+.rincon{
+    background-image: url(./imgs/Rincon-IPA.jpeg);
+    height: 100%;
+    /* margin-left:210px; */
+    float:left;
+}
+.rincon-ipa-header{
+    -webkit-text-stroke: .5px #C60103;
+    position: relative;
+    left: 33px;
+    top: 259px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+/* GUZMAN LEMONADE */
+.guzman{
+    background-image: url(./imgs/Guzman-HL.jpeg);
+    height: 100%;
+    float:left;
+}
+.guzman-hl-header{
+    -webkit-text-stroke: .5px #c0613d;
+    position: relative;
+    left: 33px;
+    top: 259px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+/* MORENO LITE */
+.moreno{
+    background-image: url(./imgs/Moreno\ Lite.jpeg);
+    height: 100%;
+    float:left;
+}
+.moreno-lite-header{
+    -webkit-text-stroke: .5px #f3ca3f;
+    position: relative;
+    left: 33px;
+    top: 259px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+/* MORALES STOUT */
+.morales{
+    background-image: url(./imgs/Morales-CS.jpeg);
+    height: 100%;
+    float:left; 
+}
+.morales-stout-header{
+    -webkit-text-stroke: .5px #ad9125;
+    position: relative;
+    left: 33px;
+    top: 259px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+/* BEER PAGE ENDS */
+/* EVENT PAGE STARTS */
+.event-body{
+    background-color: black;
+}
+.events-hero{
+    background-image:url(./imgs/event-hero-img.jpeg);
+    height:100vh;
+    width:1241px;
+    margin-left:199px;
+    background-size:cover;
+}
+.vibe{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 250px;
+    top: 350px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+.events-container{
+    background-color:black;
+    height:110vh;
+    width:1241px;
+    margin-left:199px;
+}
+.events-column{
+    float:left;
+    border:2px solid goldenrod;
+    background-color: gray;
+    width:515px;
+    text-align:center;
+    padding:50px;
+    overflow: hidden;
+}
+.up-coming-events-head{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+}
+.up-coming-events-list{
+    font-size:20px;
+    color:goldenrod;
+    position:relative;
+    left:70px;
+    top:10px;
+    font-family: 'Bungee', cursive;
+    padding:4px;
+    margin-bottom:10px;
+}
+.event-date{
+    font-size:15px;
+    color:white;
+    position:relative;
+}
+.book-us{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 400px;
+    top: 10px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+}
+.booking{
+    padding:0px;
+    margin-top:0px;
+    width:100%;
+    float:right;
+}
+/* EVENT PAGE END */
+/* ABOUT PAGE START */
+.about-body{
+    background-color: black;
+}
+.about-hero{
+    background-image: url(./imgs/about-hero-img.jpeg);
+    height:100vh;
+    width:1241px;
+    background-size:cover;
+    margin-left:199px;
+    background-repeat: no-repeat;
+}
+.cultura{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 240px;
+    top: 50px;
+    font-size: 75px;
+    color: black;
+    font-family: 'Bungee', cursive;
+}
+.about-logo{
+    height:200px;
+    width:85px;
+    position: relative;
+    left:560px;
+    top:50px;
+}
+.about-content{
+    font-size:20px;
+    color:goldenrod;
+    -webkit-text-stroke: 2px black;
+    position:relative;
+    left:20px;
+    top:80px;
+    font-family: 'Bungee', cursive;
+    padding:6px;
+    margin-bottom:10px;
+}
+/* ABOUT PAGE END */
+/* LOCATIONS PAGE STARTS */
+.locate-the-bar{
+        background-color:black;
+        height:110vh;
+        width:1241px;
+        margin-left:199px;
+}
+.locate-logo{
+    height:200px;
+    width:75px;
+    position: relative;
+    left: 550px;
+    top:100px;
+}
+.locate-mis{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+.locate-primos{
+    -webkit-text-stroke: .5px goldenrod;
+    position: relative;
+    left: 730px;
+    bottom: 125px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+}
+
 
 
